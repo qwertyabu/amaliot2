@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #202c37;
+    color: white;
+  }
+  
+  nav {
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  body.dark-mode nav {
+    background-color: #2b3945;
+  }
+  
+  button#dark-mode {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .inp {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    gap: 10px;
+  }
+  
+  .inp input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    flex: 1;
+    background: transparent;
+  }
+  
+  body.dark-mode .inp {
+    background-color: #2b3945;
+    color: white;
+  }
+  
+  .countries {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .country {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+  
+  body.dark-mode .country {
+    background-color: #2b3945;
+  }
+  
+  .country:hover {
+    transform: scale(1.02);
+  }
+  
+  .country img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .dark-mode{
+    background-color: #2b3945;
+    color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+
+  }
